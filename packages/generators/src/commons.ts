@@ -112,6 +112,7 @@ export const addVersions = (
   versions: DependencyVersions,
   defaultVersion = 'latest'
 ): string[] => dependencies.map((dep) => `${dep}@${versions[dep] || defaultVersion}`)
+
 /**
  * Loads the application package.json and populates information like the library and test directory
  * and Feathers app specific information.
